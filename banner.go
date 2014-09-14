@@ -33,19 +33,14 @@ type Banner struct {
 	info map[string]letterInfos
 }
 
-func trimRight(s string) string {
-	return strings.TrimRightFunc(s, func(s rune) bool { return s == ' ' })
-}
-
 func processOne(s string) ([]string, letterInfos) {
 	lines := strings.Split(s, "\n")
 	maxw := 0
 	for i, line := range lines {
-		lin := trimRight(line)
-		if len(lin) > maxw {
-			maxw = len(lin)
+		if len(line) > maxw {
+			maxw = len(line)
 		}
-		lines[i] = lin
+		lines[i] = line
 	}
 	return lines, letterInfos{
 		len(lines),
