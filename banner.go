@@ -2,7 +2,7 @@ package banner
 
 import (
 	"fmt"
-	"github.com/johnny-john/banner/fonts"
+	"github.com/CrowdSurge/banner/fonts"
 	"strings"
 )
 
