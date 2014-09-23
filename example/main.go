@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/johnny-john/banner"
+	"github.com/CrowdSurge/banner"
 )
 
 func main() {
